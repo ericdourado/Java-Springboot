@@ -1,0 +1,6 @@
+#FileLock
+#Sun May 22 11:02:59 BRT 2022
+hostName=Alef
+id=180ec13cc177f15d21be96e847c3eb1f47da47e09ab
+method=file
+server=192.168.56.1\:61480

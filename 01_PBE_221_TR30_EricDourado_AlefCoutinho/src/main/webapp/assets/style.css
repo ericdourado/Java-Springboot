@@ -1,0 +1,246 @@
+/*estilização global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*estilização dos inputs e botões submit de todos os formulários*/
+.btn-submit{
+    margin: 25px 0;
+    background-color: #a6ea9890;
+    outline: 0;
+    border-radius: 5px;
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    padding: 5px 20px;
+    margin-left: 15px;
+    height: 40px;
+    border: 1px #a6ea98 solid;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: #a6ea98;
+    transition: 0.25s;
+}
+.field_campo{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #9b9b9b50 ;
+}
+textarea.field_campo{
+    height: 150px;
+}
+
+.field_campo:focus{
+    border-bottom: 1px solid #ec1c2499;
+}
+
+.estilo-form{
+    border: 2px solid #00000010;
+    box-shadow: 1px 1px 2px 0.2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.estilo-form li{
+/*    border: 1px black solid;*/
+    min-height: 100px;
+    padding: 15px;
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    list-style: none; 
+}
+.estilo-form li:nth-of-type(5){
+    width: 100%;
+}
+.estilo-form li:hover{
+    background: #fdeca650;
+    border-radius: 10px;
+}
+.estilo-form li>label{
+    display: block;
+    padding-bottom: 5px; 
+}
+
+/*formulario da barra de menus*/
+.form_search input{
+    background: white;
+    padding: 5px 10px;
+    outline: 0;
+    border-radius: 5px;
+    border: none;
+    /*border-radius: 3px;*/
+}
+.form_search input[type="text"]{                                    
+    width: 130px;
+}
+.form_search input[type="submit"]:hover{
+    background: #ffffff50;
+    color: white;
+    
+}
+
+/*fim da estilização do formulário e seus componetes*/
+
+/* essa estilização faz parte do section da pagina*/
+/*manipulação do css da tabela*/
+.tbl-format{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.btn-table{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 4px;
+    
+}
+.tbl-format thead{
+    text-align: left;
+}
+.tbl-format td{
+    padding: 20px 0px;   
+}
+.tbl-format tbody tr:hover{
+    background: #f7edb350;
+}
+.tbl-format tbody td:nth-of-type(1){
+    padding-left: 15px;
+}
+.tbl-format tbody td:nth-of-type(4){
+    text-align: right;
+    padding-right: 15px;
+}
+a.btn-table.btn-ver{background-color: #a6ea9890;}
+a.btn-table.btn-edita{background-color: #e5d59590; }
+a.btn-table.btn-exclui{background-color: #e0989890; }
+
+a.btn-table.btn-ver:hover{background-color: #a6ea98;}
+a.btn-table.btn-edita:hover{background-color: #e5d595; }
+a.btn-table.btn-exclui:hover{background-color: #e09898; }
+
+/*fim da manipulação css da table*/
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    background-color: #00000099;
+    min-height: 60px;
+    text-align: center;
+    color: white;
+}
+
+header> div ul>li{
+    padding: 0 10px;
+    display:inline-block;
+    list-style: none;
+}
+header div.container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header a{
+    text-decoration: none;
+}
+header a.logo{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+header ul>li>a{
+    font-size: 18px;
+    color: white;
+}
+/*estilização da section da página*/
+main{
+    padding: 20px 0;
+    min-height: calc(100vh - 60px - 100px);
+}
+main h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+main h1:after{
+    background: black;
+    content: '';
+    display: block;
+    position: relative;
+    width: 60%;
+    max-width: 300px;
+    height: 3px;
+}
+main h2{
+    font-size: 20px;
+}
+main .section-produto h2,
+main .section-produto p{
+    text-align: center;
+}
+
+
+/*parte do site direcionado ao rodapé*/ 
+footer{
+    padding: 20px 0;
+    background-color: #00000099;
+    min-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 98%;
+    
+    }
+    .estilo-form li{
+        width: 98%;
+    }
+}
+@media (max-width: 868px){
+    div.line-master{
+        flex-direction: column;
+        display: flex;
+        cursor: pointer;
+    }
+    .line1, .line2 , .line3{
+        
+        width: 25px;
+        margin-bottom: 5px; 
+        background: black;
+        height: 2.5px;
+    }
+}
+@media (max-width: 515px){
+    a.btn-table{
+        display: block;
+        
+    }
+    .estilo-form li{
+        width: 98%;
+    }
+}
+
+
+a.logo:hover .span1{color: #0ed145;}
+a.logo:hover .span2{color: #fdeca6;}
+a.logo:hover .span3{color: #00a8f3;}
+a.logo:hover .span4{color: #ffffff;}
